@@ -1,0 +1,23 @@
+/* Flex */
+.flex {
+    display: flex;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Gap */
+.gap-50 {
+    gap: 50px;
+}
+
+.gap-40 {
+    gap: 40px;
+}
+
+/* Margin */
+.margin-45 {
+    margin: 45px 0;
+}
