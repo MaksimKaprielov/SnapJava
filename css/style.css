@@ -1,6 +1,14 @@
+/* Для сброса уже существующих стилей */
 @import url(reset.css);
+
+/* Основной файл со стилями */
 @import url(main.css);
+
+/* Вспомогающая библиотека */
 @import url(lib.css);
+
+/* Адаптивность */
+@import url(adaptive.css);
 
 /* Шрифт */
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');

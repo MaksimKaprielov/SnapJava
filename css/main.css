@@ -3,13 +3,13 @@
   width: 100%;
   height: auto;
   margin: 0 auto;
+  padding: 20px 20px 0 20px;
 }
 
 /* Header */
 header {
-  padding: 40px 0;
+  padding: 20px 0;
   margin: 20px;
-  background-color: #4a2c2a;
 }
 
 .header-inner {
@@ -20,6 +20,13 @@ header {
   flex-wrap: wrap;
 }
 
+.header-info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 40px;
+}
+
 .header__logo {
   transition: all 0.3s ease;
 
@@ -27,6 +34,13 @@ header {
     opacity: 0.5;
     transition: all 0.3s ease;
   }
+}
+
+.header-nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
 }
 
 .nav__links {
@@ -46,71 +60,82 @@ header {
         transition: all 0.3s ease;
         color: #cc9966;
       }
+
+      &:active {
+        opacity: 0.5;
+        transition: all 0.3s ease;
+      }
     }
   }
 }
 
-.apple svg {
-  fill: white;
+.header-inner a {
+  transition: all 0.3s ease;
 }
 
 .apple {
+  background-color: #cc9966;
+
   display: flex;
+  flex-direction: row;
   align-items: center;
   gap: 10px;
   padding: 14px 29px;
-  background-color: #cc9966;
   border-radius: 4px;
   border: 1px solid #cc9966;
-  max-width: max-content;
 
-  transition: all 0.3 ease;
-
-  p {
-    font-size: 16px;
-    font-weight: 600;
-    color: #fff;
-    transition: all 0.3 ease;
-  }
+  transition: all .3s ease;
 
   &:hover {
-    fill: #cc9966;
     background-color: transparent;
-    transition: all 0.3 ease;
-
-    p {
-      color: #cc9966;
-      transition: all 0.3 ease;
-    }
-
-    svg {
-      fill: #cc9966;
-      transition: all 0.3 ease;
-    }
+    transition: all .3s ease;
   }
 
-  &:active {
-    background-color: #4a2c2a;
-    border: 1px solid #4a2c2a;
-    transition: all 0.3 ease;
+  p {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 125%;
+    text-align: center;
+    color: #fff;
+    text-transform: capitalize;
+    transition: all .3s ease;
+  }
 
-    p {
-      color: #fff;
-      transition: all 0.3 ease;
-    }
+  &:hover p {
+    color: #cc9966;
+    transition: all .3s ease;
+  }
 
-    svg {
-      fill: #fff;
-      transition: all 0.3 ease;
-    }
+  svg {
+    fill: #ffffff;
+    transition: all .3s ease;
+  }
+
+  &:hover svg {
+    fill: #cc9966;
+    transition: all .3s ease;
   }
 }
 
-/* Main */
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
 
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  background-color: #ffffff;
+}
+
+/* Main */
 /* Hero */
 .hero-inner {
-  padding: 90px 0;
+  margin: 90px 0;
 }
 
 .hero__title {
@@ -133,66 +158,59 @@ header {
   justify-content: center;
   margin: 74px 0 107px 0;
   flex-wrap: wrap;
+
+  a {
+    transition: all 0.3s ease;
+  }
+}
+
+.win {
+  background-color: #fff;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  padding: 15px 29px;
+  border-radius: 4px;
+  border: 1px solid #fff;
+
+  transition: all .3s ease;
+
+  &:hover {
+    background-color: transparent;
+    transition: all .3s ease;
+  }
+
+  p {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 125%;
+    text-align: center;
+    color: #000;
+    text-transform: capitalize;
+    transition: all .3s ease;
+  }
+
+  &:hover p {
+    color: #fff;
+    transition: all .3s ease;
+  }
+
+  svg {
+    fill: #000;
+    transition: all .3s ease;
+  }
+
+  &:hover svg {
+    fill: #fff;
+    transition: all .3s ease;
+  }
 }
 
 .hero__img img {
   max-width: 1110px;
   width: 100%;
-}
-
-.win svg {
-  fill: #262a2c;
-}
-
-.win {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  padding: 15px 29px;
-  background-color: #fff;
-  border-radius: 4px;
-  border: 1px solid #fff;
-  max-width: max-content;
-
-  transition: all 0.3 ease;
-
-  p {
-    font-size: 16px;
-    font-weight: 600;
-    color: #262a2c;
-  }
-
-  &:hover {
-    fill: #fff;
-    background-color: transparent;
-    transition: all 0.3 ease;
-
-    p {
-      color: #fff;
-      transition: all 0.3 ease;
-    }
-
-    svg {
-      fill: #fff;
-      transition: all 0.3 ease;
-    }
-  }
-
-  &:active {
-    background-color: #4a2c2a;
-    border: 1px solid #4a2c2a;
-    transition: all 0.3 ease;
-
-    p {
-      color: #fff;
-      transition: all 0.3 ease;
-    }
-
-    svg {
-      fill: #fff;
-      transition: all 0.3 ease;
-    }
-  }
 }
 
 .hero__img {
@@ -202,7 +220,7 @@ header {
 
 .key-inner {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: start;
   flex-wrap: wrap;
 
@@ -211,11 +229,18 @@ header {
   margin: 0 auto;
 }
 
+.key-flex {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
 .key__item {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 17px;
+  margin: 20px;
 
   text-align: center;
 
@@ -252,7 +277,6 @@ header {
   background-color: #ffffff;
   padding: 100px 0 130px 0;
   border-radius: 40px;
-  margin: 40px;
 }
 
 .features__title {
@@ -276,6 +300,15 @@ header {
   padding: 0 20px;
 
   flex-wrap: wrap;
+
+  transition: all .3s ease;
+
+  a {
+    &:hover {
+      opacity: 0.5;
+      transition: all .3s ease;
+    }
+  }
 }
 
 .features-flex {
@@ -297,6 +330,7 @@ header {
 
 .features-info {
   height: auto;
+  padding: 0 20px;
 }
 
 .features-info__item {
@@ -401,8 +435,7 @@ header {
 
 /* Graphs */
 .graph {
-  padding: 170px 0;
-  margin: 0 20px;
+  margin: 170px 0;
 }
 
 .graph-inner {
@@ -449,8 +482,8 @@ header {
 .test {
   background-color: #fff;
   border-radius: 40px;
-  padding: 132px 0 159px 0;
-  margin: 0 20px 170px 20px;
+  padding: 100px 0;
+  margin-bottom: 170px;
 }
 
 .test__title {
@@ -532,14 +565,17 @@ header {
 
 /* cta */
 .cta {
-  background-color: #cc9966;
-  border-radius: 40px 40px 0 0;
-  padding: 50px 50px 0px 50px;
   text-align: center;
 
   max-width: 1248px;
   width: 100%;
   margin: 0 auto;
+}
+
+.cta-inner {
+  background-color: #cc9966;
+  border-radius: 40px 40px 0 0;
+  padding: 50px 50px 0px 50px;
 }
 
 .cta__title {
@@ -608,7 +644,7 @@ header {
 
 /* Footer */
 footer {
-  padding: 0 20px;
+  padding: 20px;
   background-color: #1f0f0e;
 }
 
@@ -621,6 +657,7 @@ footer {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
+  gap: 80px;
 
   padding: 114px 0 85px 0;
 }
@@ -656,11 +693,21 @@ footer {
   }
 }
 
+.footer-item__logo {
+  transition: all .3s ease;
+
+  &:hover {
+    opacity: 0.5;
+    transition: all .3s ease;
+  }
+}
+
 .footer-links {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap;
+  gap: 40px;
 
   max-width: 410px;
   width: 100%;

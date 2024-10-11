@@ -8,6 +8,10 @@
     flex-direction: column;
 }
 
+.ai-c {
+    align-items: center;
+}
+
 /* Gap */
 .gap-50 {
     gap: 50px;
@@ -20,4 +24,8 @@
 /* Margin */
 .margin-45 {
     margin: 45px 0;
+}
+
+.mb-40 {
+    margin-bottom: 40px;
 }

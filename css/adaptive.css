@@ -1,0 +1,177 @@
+/* 700px */
+@media (max-width: 700px) {
+  .hamburger {
+    display: block;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  header {
+    background-color: #4A2C2A;
+  }
+
+  .header-inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .header-nav {
+    display: none;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    text-align: center;
+    transition: .3s;
+    gap: 20px;
+    margin-top: 40px;
+  }
+
+  .header-nav.active {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .header-info__flex {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+}
+
+/* 950px */
+@media (max-width: 950px) {
+  /* Features */
+  .features__logo {
+    flex-direction: column;
+    gap: 50px;
+    margin-top: 50px;
+  }
+
+  .features__title {
+    max-width: 520px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .features-info__title {
+    text-align: center;
+  }
+
+  .features-flex {
+    flex-direction: column-reverse;
+    gap: 40px;
+  }
+
+  .features-info__button {
+    margin: 0 auto;
+  }
+
+  /* Graph */
+  .graph-inner {
+    gap: 50px;
+  }
+
+  .graph-info {
+    text-align: center;
+  }
+
+  .graph-info__title {
+    margin: 0 auto;
+  }
+
+  /* Key */
+  .key {
+    padding: 0 20px;
+  }
+
+  /* Testimonials */
+  .test__title {
+    line-height: 120%;
+  }
+
+  .test-info {
+    text-align: center;
+  }
+
+  .test-content {
+    margin-top: 50px;
+    gap: 25px;
+  }
+
+  .test-info__name {
+    margin-bottom: 10px;
+  }
+
+  .dots {
+    justify-content: center;
+  }
+
+  /* CTA */
+  .cta__title {
+    font-size: 48px;
+    line-height: 120%;
+    max-width: 520px;
+  }
+}
+
+/* 790px */
+@media (max-width: 790px) {
+  /* Hero */
+  .hero__title {
+    font-size: 52px;
+
+    max-width: 580px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  /* Features */
+  .features-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .features-info__title {
+    font-size: 36px;
+  }
+
+  /* Test */
+  .test__title {
+    font-size: 36px;
+
+    max-width: 540px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .test-info__quote {
+    font-size: 28px;
+  }
+}
+
+/* 550px */
+@media (max-width: 550px) {
+  /* Hero */
+  .hero__title {
+    font-size: 42px;
+
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
